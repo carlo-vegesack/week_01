@@ -14,7 +14,11 @@ x = x.replace("\n", "")
 count = {}
 # Count the characters in `x`` and put the counts in `counts`.
 # Your code goes here.
-
+for c in x:
+    if c not in dict:
+        count[c]=0
+    count[c]+=1
+print (count)
 
 # Get the keys, i.e., the characters, in sorted order
 # and print the count
