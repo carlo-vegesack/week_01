@@ -41,18 +41,32 @@ if len(sys.argv) < 2:
 
 match sys.argv[1]:
     case "mean":
+        addition = 0
+        m = 0
         # put your solution to the first exercise here
-        mean = "mean of x"
+        for y in x:
+            addition += y
+            m+=1
+        mean = addition/m
         print(mean)
 
     case "times":
         # Put your solution to the second exercise here
+        # this asks the user for a number and turns the answer
+        # into an integer
+        n = int(input("How many times should I loop? "))
         times_three = []
+        for i in x:
+            times_three.append(i*3)
         print_list(times_three)
 
     case "even":
         # Put your solution to the third exercise here
+        # Print the numbers described in the exercise
         even = []
+        for j in x:
+            if j % 2 == 0:
+                even.append(j)
         print_list(even)
 
     case _:

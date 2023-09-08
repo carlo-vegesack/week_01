@@ -1,4 +1,5 @@
 # Print the pattern
+# sep know to only do it between values
 for x in range(1,10):
     if x < 6:
         print(*x*('*',), sep=' ')
